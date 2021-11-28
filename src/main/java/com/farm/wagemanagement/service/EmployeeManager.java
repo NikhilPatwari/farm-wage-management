@@ -9,4 +9,6 @@ public interface EmployeeManager{
     public List<Employee> getAllEmployee();
 
     public Employee getEmployeeById(String id);
+
+    public Employee editEmployee(Employee employee);
 }
