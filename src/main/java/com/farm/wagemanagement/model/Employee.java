@@ -1,8 +1,10 @@
 package com.farm.wagemanagement.model;
 
 
-import javax.persistence.*;
+import lombok.Data;
 
+import javax.persistence.*;
+@Data
 @Entity
 @Table(name= "Employee")
 public class Employee {

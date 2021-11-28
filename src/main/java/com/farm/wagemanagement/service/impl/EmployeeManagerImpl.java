@@ -26,6 +26,7 @@ public class EmployeeManagerImpl implements EmployeeManager {
 
     @Override
     public Employee editEmployee(Employee employee) {
+        System.out.println(employee);
         return employeeRepository.save(employee);
     }
 }
