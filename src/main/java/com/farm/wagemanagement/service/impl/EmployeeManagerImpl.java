@@ -13,12 +13,19 @@ public class EmployeeManagerImpl implements EmployeeManager {
 
     @Autowired
     private EmployeeRepository employeeRepository;
+
     @Override
     public List<Employee> getAllEmployee() {
           return employeeRepository.findAll();
     }
+
     @Override
     public Employee getEmployeeById(String id){
         return employeeRepository.getById(Long.parseLong(id));
+    }
+
+    @Override
+    public Employee editEmployee(Employee employee) {
+        return employeeRepository.save(employee);
     }
 }

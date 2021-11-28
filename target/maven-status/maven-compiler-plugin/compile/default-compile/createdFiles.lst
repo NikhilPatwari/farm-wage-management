@@ -1,0 +1,6 @@
+com\farm\wagemanagement\service\impl\EmployeeManagerImpl.class
+com\farm\wagemanagement\WageManagementApplication.class
+com\farm\wagemanagement\model\Employee.class
+com\farm\wagemanagement\controller\EmployeeController.class
+com\farm\wagemanagement\repository\EmployeeRepository.class
+com\farm\wagemanagement\service\EmployeeManager.class

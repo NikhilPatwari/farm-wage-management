@@ -23,7 +23,7 @@ public class EmployeeController {
         return employeeManager.getEmployeeById(id);
     }
     @PutMapping()
-    public void putEmployee(){
-
+    public Employee editEmployee(@RequestBody Employee employee) {
+        return employeeManager.editEmployee(employee);
     }
 }
