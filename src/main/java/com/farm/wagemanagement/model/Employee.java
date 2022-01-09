@@ -1,6 +1,7 @@
 package com.farm.wagemanagement.model;
 
 
+import lombok.Builder;
 import lombok.Data;
 
 import javax.persistence.*;
@@ -20,10 +21,19 @@ public class Employee {
             generator = "employee_sequence"
     )
     private long id;
-    private String firstName;
-    private String lastName;
+    private String name;
     private int age;
     private String sex;
     private long mobileNumber;
     private String address;
+    @ManyToOne(
+            cascade = CascadeType.ALL
+    )
+    @JoinColumn(
+            name = "orgId",
+            referencedColumnName = "id"
+    )
+    private Organization org;
+    @Builder.Default
+    private double balanceAmount = 0;
 }
