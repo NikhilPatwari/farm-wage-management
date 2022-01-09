@@ -9,7 +9,6 @@ import javax.persistence.*;
 @Entity
 @Table(name= "Employee")
 public class Employee {
-
     @Id
     @SequenceGenerator(
             name = "employee_sequence",
@@ -36,4 +35,5 @@ public class Employee {
     private Organization org;
     @Builder.Default
     private double balanceAmount = 0;
+    private boolean status;
 }

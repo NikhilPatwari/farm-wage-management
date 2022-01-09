@@ -3,7 +3,6 @@ package com.farm.wagemanagement.model;
 import lombok.Data;
 
 import javax.persistence.*;
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 @Data
@@ -62,4 +61,20 @@ public class Expense {
             referencedColumnName = "id"
     )
     private Organization org;
+    @ManyToOne(
+            cascade = CascadeType.ALL
+    )
+    @JoinColumn(
+            name = "farmerId",
+            referencedColumnName = "id"
+    )
+    private Employer employer;
+    @ManyToOne(
+            cascade = CascadeType.ALL
+    )
+    @JoinColumn(
+            name = "employeeId",
+            referencedColumnName = "id"
+    )
+    private Employee employee;
 }

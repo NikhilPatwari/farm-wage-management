@@ -3,7 +3,7 @@ package com.farm.wagemanagement.model;
 import javax.persistence.*;
 
 @Entity
-public class Farmer {
+public class Employer {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "farmerIdSequence")
     @SequenceGenerator(name = "farmerIdSequence", sequenceName = "farmerIdSequence", allocationSize = 1)
@@ -22,5 +22,6 @@ public class Farmer {
             referencedColumnName = "id"
     )
     private Organization org;
+    private boolean status;
 
 }
