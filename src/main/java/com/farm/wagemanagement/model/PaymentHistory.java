@@ -4,7 +4,7 @@ import javax.persistence.*;
 import java.time.LocalDateTime;
 
 @Entity
-public class Payroll {
+public class PaymentHistory {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "payrollSequence")
     @SequenceGenerator(name = "payrollSequence", sequenceName = "payrollSequence", allocationSize = 1)
@@ -29,5 +29,4 @@ public class Payroll {
             referencedColumnName = "id"
     )
     private Employer employer;
-    private String type; // advance,compensation
 }

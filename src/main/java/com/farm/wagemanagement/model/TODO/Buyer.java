@@ -1,6 +1,7 @@
-package com.farm.wagemanagement.model;
+package com.farm.wagemanagement.model.TODO;
 
 import lombok.Data;
+
 import javax.persistence.*;
 
 @Data

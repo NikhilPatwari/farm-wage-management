@@ -1,5 +1,6 @@
-package com.farm.wagemanagement.model;
+package com.farm.wagemanagement.model.TODO;
 
+import com.farm.wagemanagement.model.Organization;
 import lombok.Data;
 
 import javax.persistence.*;
@@ -51,5 +52,5 @@ public class IncomeBill {
             name = "paymentModeId",
             referencedColumnName = "id"
     )
-    private PaymentMode paymentMode;
+    private IncomeSource.PaymentMode paymentMode;
 }

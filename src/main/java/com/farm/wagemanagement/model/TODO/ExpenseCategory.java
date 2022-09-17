@@ -1,4 +1,4 @@
-package com.farm.wagemanagement.model;
+package com.farm.wagemanagement.model.TODO;
 
 import javax.persistence.*;
 

@@ -12,8 +12,6 @@ public class WorkRecord {
     @SequenceGenerator(name = "workRecordSequence", sequenceName = "workRecordSequence", allocationSize = 1)
     @Column(name = "id", nullable = false)
     private Long id;
-
-    private double payout;
     private LocalDate date;
     @ManyToOne(
             cascade = CascadeType.ALL
@@ -32,5 +30,4 @@ public class WorkRecord {
     )
     private Employee employee;
     private double totalWork;
-    private double compensation;
 }
